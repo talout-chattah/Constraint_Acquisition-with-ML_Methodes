@@ -1,44 +1,4 @@
-# Scalable Constraint Acquisition with Trees and Neural Nets
-
-## Project Structure
-
-This project has been organized into modular files for better maintainability and reusability:
-
-### Files Overview
-
-1. **`config.py`**
-   - Contains all configuration parameters (N_VARS, DOMAIN, N_SAMPLES, SEED)
-   - Initializes random seeds for reproducibility
-
-2. **`constraints.py`**
-   - Functions for generating hidden constraints
-   - Constraint checking oracle
-   - Printing and formatting constraint information
-
-3. **`data_generation.py`**
-   - Dataset generation from constraints
-   - Random sampling functions for distillation
-
-4. **`models.py`**
-   - Training functions for all models:
-     - Decision Tree
-     - Neural Network
-     - XGBoost
-   - Distillation function (teacher → student)
-
-5. **`evaluation.py`**
-   - Model evaluation against ground truth
-   - Testing new examples
-   - Violation reporting
-
-6. **`tree_extraction.py`**
-   - Extract interpretable constraints from decision trees
-   - Print learned rules in human-readable format
-
-7. **`main.py`**
-   - Main orchestration script
-   - Executes the entire workflow
-   - Coordinates all modules
+# Constraint Acquisition with Trees and Neural Nets
 
 ## Usage
 
